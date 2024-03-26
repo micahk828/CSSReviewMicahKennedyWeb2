@@ -1,203 +1,247 @@
-<!DOCTYPE html>
-<html>
-<!-- metadata-->
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>CSS_Review</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <!DOCTYPE html>
+  <html>
+  <!-- metadata-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS_Review</title>
+     <link rel="icon" type="image/png" href="favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-	<!-- body has the content-->
-<body>
-
-	<h1 id="mainH">CSS</h1>
-  <h1 id="logo">
-       Review Page
-  </h1>
-
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="Animation.html">Animations</a>
-		<a href="Layout.html">Layouts</a>
-		<a href=".html"></a>
-	</nav>
+    <!-- body has the content-->
+  <body>
+    <div class="banner">
+      <h1>Thomas A. Edison CTE HS</h1>
+      <img src="logo.png" alt="Web Development" id="logo">
+      <h2>Web Development Class</h2>
+      <h3>CSS Review</h3>
+      <h4>03/25/2024</h4>
+      <h5>By: Micah Kennedy</h5>
+      <div class="menu">NavMenu
+        <a href="index.html">Home</a>
+        <a href="Animation.html">Animations</a>
+        <a href="Layout.html">Layouts</a>
+      </div>
+    </div>
 <div id="twoD">  
 	<h1>The translate() Method</h1>
 <p>The translate() method moves an element from its current position:</p>
 
-<div>
+<div class="box trans">
 This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
-</div>
+</div><hr>
+<div class="box transX">
+  This div element is moved 50 pixels to the right.
+</div><hr>
+  <div class="box transY">
+  This div element is moved 100 pixels down from its current position.
+  </div><hr>
+   
 <hr>
   <h1>The rotate() Method</h1>
 
 <p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+<hr>
 
-<div>
-This a normal div element.
-</div>
-
-<div id="myDiv">
-This div element is rotated clockwise 20 degrees.
-</div>
-
-  <hr>
+  <div id="rotate" class="box">
+  This div element is rotated  x and y.
+  </div>
+    <hr>
+    <div id="rotateX" class="box">
+    This div element is rotated clockwise 20 degrees X-axix.
+    </div>
+    <hr>
+    <div id="rotateY" class="box">
+    This div element is rotated clockwise 20 degrees Y-axix.
+    </div>
+    <hr>
 <h1>The scale() Method</h1>
 
 <p>The scale() method increases or decreases the size of an element.</p>
 
-<div>
-This div element is two times of its original width, and three times of its original height.
-</div>
+  <div id="scale" class="box">
+  This div element is two times of its original width, and three times of its original height.
+  </div>
+
+    <hr>
+  <h1>The scaleX() Method</h1>
+
+  <p>The scaleX() method increases or decreases the width of an element.</p>
+
+  <div id="scaleX" class="box">
+  This div element is two times of its original width.
+  </div>
+  <hr>
+    <h1>The scaleY() Method</h1>
+
+  <p>The scaleY() method increases or decreases the height of an element.</p>
+
+  <div id="scaleY" class="box">
+  This div element is three times of its original height.
+  </div>
 
   <hr>
-<h1>The scaleX() Method</h1>
-
-<p>The scaleX() method increases or decreases the width of an element.</p>
-
-<div>
-This div element is two times of its original width.
-</div>
-<hr>
-  <h1>The scaleY() Method</h1>
-
-<p>The scaleY() method increases or decreases the height of an element.</p>
-
-<div>
-This div element is three times of its original height.
-</div>
-
-  <hr>
-<h1>The skewX() Method</h1>
+<h1>The skew() Method</h1>
 
 <p>The skewX() method skews an element along the X-axis by the given angle.</p>
 
-<div>
-This a normal div element.
-</div>
+  <div id="skew" class="box">
+    This div element is skewed 20 degrees on X-axis and Y-axis.
+  </div>
+    
 
-<div id="myDiv">
-This div element is skewed 20 degrees along the X-axis.
-</div>
+  <div id="skewX" class="box">
+  This div element is skewed  20 degrees along the X-axis.
+  </div>
+     
 
+    <div id="skewY" class="box">
+    This div element is skewed 20 degrees along the Y-axis.
+    </div>
   <hr>
 <h1>The matrix() Method</h1>
 
 <p>The matrix() method combines all the 2D transform methods into one.</p>
 
-<div>
-This a normal div element.
-</div>
+  <div id="matrix" class="box">
+  This a matrix div element.
+  </div>
 
-<div id="myDiv1">
-Using the matrix() method.
-</div>
+  <div id="matrix2" class="box">
+  Using anpther the matrix() method.
+  </div>
 
-<div id="myDiv2">
-Another use of the matrix() method.
-</div>
+  <div id="yourOwnMatrix" class="box">
+  Another use of the matrix() method.
+  </div>
 </div>
   
   <div id="threeD">
-    <h1>The rotateX() Method</h1>
-
-<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
-
-<div>
-This a normal div element.
-</div>
-
-<div id="myDiv">
-This div element is rotated 150 degrees.
-</div>
     <hr>
-    <h1>The rotateY() Method</h1>
+      <h1> translate 3D</h1>
+      <div class="box" id="trans3D">translate 3D</div>
+      <hr> <h1>The rotate3D() Method</h1>
 
-<p>The rotateY() method rotates an element around its Y-axis at a given degree.</p>
+    <p>The rotate3d() method defines a transformation that rotates an element around a fixed axis in 3D space, without deforming it.</p>
 
-<div>
-This a normal div element.
-</div>
-
-<div id="myDiv">
-This div element is rotated 150 degrees.
-</div>
+    <div class="box" id="rotate3d">
+      This a normal div element.
+    </div>
     <hr>
-<h1>The rotateZ() Method</h1>
 
-<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
+      <h1>The rotateZ() Method</h1>
 
-<div>
-This a normal div element.
-</div>
+      <p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
 
-<div id="myDiv">
-This div element is rotated 90 degrees.
-</div>
+      <div class="box" id="rotateZ">
+        This a normal div element.
+      </div>
+    <hr>
+    <h1>The scale3d() Method</h1>
+
+    <p>The scale3d() defines a transformation that resizes an element in 3D space.</p>
+
+    <div class="box" id="scale3d">
+      This a normal div element.
+    </div>
+    <hr>
+    <h1>The perspective() Method</h1>
+
+    <p>The perspective() method determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective.</p>
+
+    <p>perspective: 100px:</p>
+    <div id="div1">DIV1
+      <div id="div2">DIV2</div>
+    </div>
+
+    <p>perspective: none:</p>
+    <div id="div3">DIV3
+      <div id="div4">DIV4</div>
+    </div>
+    <hr>
+    <h1>The Matrix3d() Method</h1>
+
+    <p>The matrix3d() defines a 3D transformation as a 4x4 homogeneous matrix.</p>
+
+    <div class="box" id="matrix3d">
+      This a normal div element.
+    </div>
+    </div>
+    <div id="transitions">
+      <hr>
+      <h1>The transition Property</h1>
+
+      <p>Hover over the div element below, to see the transition effect:</p>
+      <div class="box1" id="transition">transiton</div>
+      <hr>
+      <div class="box1" id="delay">delay</div>
+      <hr>
+      <div class="box1" id="duration">duration</div>
+      <hr>
+      <div class="box1" id="property">property</div>
+      <hr>
+      <div class="box1" id="timing">timing function</div>
+      <hr>
   </div>
-  <div id="transitions">
-    <hr>
-    <h1>The transition Property</h1>
 
-<p>Hover over the div element below, to see the transition effect:</p>
-<div></div>
-    
-  </div>
+    <div id="animations">
+      <hr>
+      <h1>CSS Animation background</h1>
 
-  <div id="animations">
-    <hr>
-    <h1>CSS Animation background</h1>
+      <div class="box1" id="animate"></div>
 
-<div></div>
+      <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+      <h1>CSS Animation background and position</h1>
 
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-<h1>CSS Animation background and position</h1>
+      <div class="box1" id="animate2"></div>
 
-<div></div>
+      <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+      <hr>
+      <h1>CSS Animation background and position</h1>
 
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-<hr>
+      <div class="box1" id="animate3"></div>
+      <hr>
     <h1>CSS Animation delay</h1>
 
 <p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
 
-<div></div>
+<div class="box1" id="rotate3d"></div>
     <hr>
 <h1>CSS Animation repetitions</h1>
 
 <p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
 
-<div></div>
+<div id="iteration"></div>
 <hr>
 
     <h1>CSS Animation reverse direction or alternate cycles</h1>
 
 <p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example will run the animation in reverse direction (backwards):</p>
 
-<div></div>
+<div id="direction"></div>
     <hr>
 <h1>CSS Specify the Speed Curve of the Animation </h1>
 
 <p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
 
-<div id="div1">linear</div>
-<div id="div2">ease</div>
-<div id="div3">ease-in</div>
-<div id="div4">ease-out</div>
-<div id="div5">ease-in-out</div>
+<div id="linear">linear</div>
+<div id="ease">ease</div>
+<div id="ease-in">ease-in</div>
+<div id="ease-out">ease-out</div>
+<div id="ease-in-out">ease-in-out</div>
 <hr>
-<h1>CSS Animation Specify the fill-mode <h1>
+<h1>CSS Animation Specify the fill-mode </h1>
 
 <p>Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
 
-<div></div>
+<div id="fill-mode"></div>
 <hr>
   <h1>CSS Animation Shorthand </h1>
 
 <p>This example uses the shorthand animation property:</p>
 
-<div></div>
+<div id="animation"></div>
   </div>
 	</body>
 
